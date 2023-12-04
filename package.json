@@ -1,0 +1,11 @@
+{
+  "name": "tallercc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/DanielMomo/tallercc.git",
+  "author": "MomoBR <daniel_set1988@hotmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  }
+}
