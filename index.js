@@ -22,3 +22,21 @@ const licenseKeyFormatting = (S, K) => {
 
     return license;
 }
+
+// read from args, make sure that the input is valid and run the function
+
+const args = process.argv.slice(2);
+
+if (args.length !== 2) {
+    console.log("Usage: node index.js <string> <integer>");
+    process.exit(1);
+}
+
+const [S, K] = args;
+
+if (isNaN(K)) {
+    console.log("K must be an integer");
+    process.exit(1);
+}
+
+console.log(licenseKeyFormatting(S, parseInt(K)));
